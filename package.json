@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "jest-junit-reporter": "1.1.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-redux": "^7.1.0",
-    "redux": "^4.0.1",
     "react-scripts": "1.1.5",
-    "jest-junit-reporter": "1.1.0"
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
