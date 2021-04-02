@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/src/sagas/index.test.js" errors="0" package="/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/src/sagas/index.test.js" hostname="localhost" tests="14" failures="0" time="1.05" timestamp="2021-04-02T21:41:52">
+    <properties>
+    </properties>
+    <testcase classname="standard login flow" name="it waits for a LOGIN_REQUEST action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="then it forks the authorize method" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="then it waits for a LOGOUT or LOGIN_ERROR action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="then it cancels the authorize call on a LOGOUT action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="then it triggers a DELETE_TOKEN action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="and finally it waits again for a LOGIN_REQUEST action" time="0">
+    </testcase>
+    <testcase classname="login error flow" name="if a LOGIN_ERROR action happens it doesn&apos;t cancel the authorize task (because it&apos;s the authorize task itself that triggers the LOGIN_ERROR action)" time="0">
+    </testcase>
+    <testcase classname="login error flow" name="neither it triggers a DELETE_TOKEN action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="it calls the authorization method" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="then it triggers a LOGIN_SUCCESS action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="then it triggers a SAVE_TOKEN action" time="0">
+    </testcase>
+    <testcase classname="standard login flow" name="finally it checks if it&apos;s been cancelled by another generator" time="0">
+    </testcase>
+    <testcase classname="external cancellation" name="It triggers a LOGIN_CANCELLED action if cancelled externally" time="0">
+    </testcase>
+    <testcase classname="login error flow" name="it triggers a LOGIN_ERROR action in case of login error" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="1" name="/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/src/App.test.js" errors="0" package="/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/src/App.test.js" hostname="localhost" tests="1" failures="1" time="0.411" timestamp="2021-04-02T21:41:53">
+    <properties>
+    </properties>
+    <testcase classname="renders learn react link" name="renders learn react link" time="0">
+      <failure message="ReferenceError: React is not defined
+    at Object.&lt;anonymous&gt; (/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/src/App.test.js:5:22)
+    at Object.asyncFn (/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at /Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/node_modules/jest-jasmine2/build/queueRunner.js:38:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at /Users/quangdang/Documents/Learning/reduct-saga/redux-saga-login-example/node_modules/p-map/index.js:46:16" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
